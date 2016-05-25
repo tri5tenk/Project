@@ -38,7 +38,15 @@ angular.module('BusTracker', ['ionic'])
    url: '/routes',
    templateUrl: 'templates/routes.html',
    controller: 'routeCtrl'
- });
+ })
+
+ .state('map', {
+    url: '/map',
+    templateUrl: 'templates/map.html',
+    controller: 'MapCtrl'
+  });
+
+
 
 
  $urlRouterProvider.otherwise('/home');
