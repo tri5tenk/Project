@@ -2,11 +2,41 @@
 	text-align: center;
 }
 
-.button {
-	
-	overflow: hidden;
+
+#logo{
+	width: 100%;
+	margin: 0 auto;
 }
 
-strong.ng-binding{
-	
+.card img {
+	width: 100%;
+	opacity: .8;
+	padding: 0;
+}
+
+ #routecards {
+	overflow: initial;
+	white-space: initial;
+	padding: 15px 20px 20px 15px;
+	width: 110%;
+	height: 80px;
+	margin: 0 auto;
+	vertical-align: middle;
+	background-color: #f3e78c;
+		
+}
+
+.item {
+	border-style: none;
+}
+
+.item {
+	padding: 0px;
+}
+
+.item.item-divider{
+	background-color: #387EF5;
+	padding: 10px;
+	font-size: 120%;
+	color: white;
 }
