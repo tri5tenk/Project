@@ -41,7 +41,7 @@ angular.module('BusTracker', ['ionic'])
  });
 
 
- $urlRouterProvider.otherwise('/routes');
+ $urlRouterProvider.otherwise('/home');
 });
 
 
