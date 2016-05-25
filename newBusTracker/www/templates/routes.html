@@ -1,14 +1,16 @@
-
-
-<ion-view view-title="Routes">
+<ion-view view-title="Dashboard">
   <ion-content class="padding">
-    
+    <h2>Bus Tracker</h2>
+      <ion-list>
         
           <ion-item ng-repeat="route in routes" href="#/map">
-            <div class="card" id="routecards">
+            <button class="button button-block button-positive" name="{{route.name}}">
               {{route.title}}
-             </div>
+             </button>
           </ion-item>
+       
+
+  
 
   </ion-content>
 </ion-view>
