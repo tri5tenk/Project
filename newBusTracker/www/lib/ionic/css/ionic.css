@@ -30,6 +30,15 @@
   font-weight: normal;
   font-style: normal; }
 
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.scroll {
+  height: 100%;
+}
+
 .ion, .ionicons,
 .ion-alert:before,
 .ion-alert-circled:before,
