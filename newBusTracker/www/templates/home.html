@@ -3,8 +3,7 @@
   <ion-content class="padding">
     <img src="../images/bustracker.png" id="logo">
       
-   
-      <div class="card" class="">
+      <div class="card" ng-click = "gotourl('/routes')">
         <div class="item item-divider">
            <i class="ion-android-time"></i> Waiting
         </div>
@@ -13,27 +12,15 @@
         </div>
       </div>
 
-      <div class="card">
+    
+      <div class="card" ng-click = "gotourl('/routes')">
         <div class="item item-divider">
           <i class="ion-android-bus"></i> Riding
         </div>
         <div class="item item-text-wrap">
           <img src="../images/bus.jpg">
       </div>
-        <!--
-      </div>
-
-          <ion-item href="#/routes">
-            <button class="button button-block button-positive">
-              <strong>Waiting</strong>
-            </button>
-          </ion-item>
-
-          </ion-item href="#/routes">
-            <button class="button button-block button-positive">
-              <strong>Riding</strong>
-            </button>
-          </ion-item>
-      -->
+    
+       
   </ion-content>
 </ion-view>

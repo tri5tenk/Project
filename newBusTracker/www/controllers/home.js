@@ -1,8 +1,11 @@
 
 angular.module('BusTracker')
 
-.controller("home", function($scope, Homeservice){ //dependency injection
+.controller("home", function($scope, Homeservice, $location){ //dependency injection
  $scope.message = Homeservice;
+ $scope.gotourl = function(path){
+    $location.path(path);
+ }
 })
 
  .controller('routeCtrl', function($scope, BusService) {
