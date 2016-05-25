@@ -3,7 +3,7 @@
   <ion-content class="padding">
     <img src="../images/bustracker.png" id="logo">
       
-      <div class="card" ng-click = "gotourl('/routes')">
+      <div class="card" ng-click = "gotourl('/routes', 'waiting')">
         <div class="item item-divider">
            <i class="ion-android-time"></i> Waiting
         </div>
@@ -13,7 +13,7 @@
       </div>
 
     
-      <div class="card" ng-click = "gotourl('/routes')">
+      <div class="card" ng-click = "gotourl('/routes', 'riding')">
         <div class="item item-divider">
           <i class="ion-android-bus"></i> Riding
         </div>

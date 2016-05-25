@@ -3,8 +3,13 @@ angular.module('BusTracker')
 
 .controller("home", function($scope, Homeservice, $location){ //dependency injection
  $scope.message = Homeservice;
- $scope.gotourl = function(path){
+ $scope.gotourl = function(path, whichclicked){
     $location.path(path);
+
+    if(whichclicked=='waiting')
+    {
+      alert('hello')
+    }
  }
 })
 
