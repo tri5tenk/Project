@@ -1,21 +1,26 @@
 <ion-view view-title="Home">
 
   <ion-content class="padding">
-    <h2>BusTracker</h2>
+    <img src="../images/bustracker.png" id="logo">
       
-          <ion-item href="#/routes">
-            <button id ="waiting" class="button button-block button-positive " value="1" ng-click="waiting()">
-              <strong>Waiting</strong>
-            </button>
-          </ion-item>
-      
-          <ion-item href="#/routes">
-            <button id ="riding" class="button button-block button-positive " value="2" ng-click="riding()"> 
-              <strong>Riding</strong>
-            </button>
-          </ion-item>
-     
+      <div class="card" ng-click = "gotourl('/routes', 'waiting')">
+        <div class="item item-divider">
+           <i class="ion-android-time"></i> Waiting
+        </div>
+        <div class="item item-text-wrap">
+          <img src="../images/busstop.jpg">
+        </div>
+      </div>
+
+    
+      <div class="card" ng-click = "gotourl('/routes', 'riding')">
+        <div class="item item-divider">
+          <i class="ion-android-bus"></i> Riding
+        </div>
+        <div class="item item-text-wrap">
+          <img src="../images/bus.jpg">
+      </div>
+    
+       
   </ion-content>
 </ion-view>
-
-

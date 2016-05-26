@@ -1,16 +1,14 @@
-<ion-view view-title="Dashboard">
-  <ion-content class="padding">
-    <h2>Bus Tracker</h2>
-      <ion-list>
-        
-          <ion-item ng-repeat="route in routes" href="#/map">
-            <button class="button button-block button-positive" name="{{route.name}}">
-              {{route.title}}
-             </button>
-          </ion-item>
-       
 
-  
+
+<ion-view view-title="Routes">
+  <ion-content class="padding">
+    
+        
+          <ion-item ng-repeat="route in routes"  ng-click = "gotourl('/map', '{{route.name}}')">
+            <div class="card" id="routecards">
+              {{route.title}}
+             </div>
+          </ion-item>
 
   </ion-content>
 </ion-view>

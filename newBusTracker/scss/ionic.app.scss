@@ -1,5 +1,3 @@
-
-
 /*
 To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
@@ -23,11 +21,3 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
-.scroll {
-    height: 100%;
-}
- 
-#map {
-    width: 100%;
-    height: 100%;
-}
