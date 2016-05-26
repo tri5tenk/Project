@@ -8,7 +8,7 @@ angular.module('BusTracker')
 
     if(whichclicked=='waiting')
     {
-      alert('hello')
+      
     }
  }
 })
