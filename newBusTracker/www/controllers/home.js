@@ -3,9 +3,14 @@ angular.module('BusTracker')
 
 .controller("home", function($scope, Homeservice, $location, ButtonService){ //dependency injection
  $scope.message = Homeservice;
+
  $scope.gotourl = function(path, whichclicked){
-    $location.path(path);
+
+  if(arguments.length == 2) {
     ButtonService.addChoice(whichclicked);
+  }
+  
+    $location.path(path);
  }
 })
 
@@ -18,7 +23,7 @@ angular.module('BusTracker')
  }
 })
 
- .controller('MapCtrl', function($scope, $state, $firebaseArray, ButtonService, RouteService) {
+ .controller('MapCtrl', function($scope, $state, $firebaseArray, ButtonService, RouteService, $location) {
 
   var options = {timeout: 10000, enableHighAccuracy: true};
  
@@ -45,15 +50,15 @@ angular.module('BusTracker')
     choice=ButtonService.getChoice();
     route=RouteService.getRoute();
 
-if(choice=='riding')
-{
+  if(choice=='riding')
+  {
     fb.push().set({
     "lat":position.coords.latitude,
     "long":position.coords.longitude,
     "time":" ",
     "route":route
-  });    
-}
+    });    
+  }
 
   
   fb_array.$loaded(function(points){
@@ -63,13 +68,13 @@ if(choice=='riding')
 
     var infowindow = new google.maps.InfoWindow({
     content: contentString
-  });
+    });
 
     var marker = new google.maps.Marker({
     map: $scope.map,
     animation: google.maps.Animation.DROP,
     position: {lat: value.lat, lng: value.long}
-  });
+    });
 
      marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -78,11 +83,15 @@ if(choice=='riding')
   })
   
  
-});
+  });
   }, function(error){
     console.log("Could not get location");
   },
   options
   );
+
+  $scope.gotourl = function(path){
+    $location.path(path);
+  }
 });
  

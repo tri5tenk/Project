@@ -44,8 +44,19 @@ angular.module('BusTracker', ['ionic', "firebase"])
     url: '/map',
     templateUrl: 'templates/map.html',
     controller: 'MapCtrl'
-  });
+  })
 
+ .state('aboutus', {
+    url: '/aboutus',
+    templateUrl: 'templates/aboutus.html',
+    controller: 'home'
+  })
+
+ .state('help', {
+    url: '/help',
+    templateUrl: 'templates/help.html',
+    controller: 'home'
+  })
 
 
 
