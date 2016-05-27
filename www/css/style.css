@@ -1,0 +1,61 @@
+*{
+	text-align: center;
+}
+
+
+#logo{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.card img {
+	width: 100%;
+	padding: 0;
+}
+
+ #routecards {
+	overflow: initial;
+	white-space: initial;
+	padding: 15px 20px 20px 15px;
+	width: 100%;
+	height: 80px;
+	background-color: #f3e78c;
+		
+}
+
+p {
+	margin-top: 10px;
+}
+
+.item {
+	border-style: none;
+	padding: 0px;
+}
+
+
+.item-complex .item-content {
+
+	padding: 10px 5px 10px 5px;
+
+}
+
+.item.item-divider{
+	background-color: #387EF5;
+	padding: 10px;
+	font-size: 120%;
+	color: white;
+}
+.bar .button{
+	padding: 0px 15px;
+}
+
+#footer{
+	background-color: #ccc;
+	border-color: #ccc;
+}
+
+.helpP{
+	text-align: left;
+	width: 80%;
+	margin: 10px auto 10px auto;
+}

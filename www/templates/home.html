@@ -1,0 +1,37 @@
+<ion-view view-title="Home">
+
+  <ion-content class="padding">
+    <img src="img/bustracker.png" id="logo">
+      
+      <div class="card" ng-click = "gotourl('/routes', 'waiting')">
+        <div class="item item-divider">
+           <i class="ion-android-time"></i> Waiting
+        </div>
+        <div class="item item-text-wrap">
+          <img src="img/busstop.jpg">
+        </div>
+      </div>
+
+    
+      <div class="card" ng-click = "gotourl('/routes', 'riding')">
+        <div class="item item-divider">
+          <i class="ion-android-bus"></i> Riding
+        </div>
+        <div class="item item-text-wrap">
+          <img src="img/bus.jpg">
+        </div>
+      </div>
+  </ion-content>
+
+    <ion-footer-bar  class="bar-positive" id="footer">
+         <div class="buttons">
+          <button class="button" ng-click = "gotourl('/help')">Help</button>
+        </div>
+
+        <h5 class="title">All rights reserved</h5>
+
+        <div class="buttons">
+          <button class="button" ng-click = "gotourl('/aboutus')">About Us</button>
+        </div>
+    </ion-footer-bar>
+</ion-view>
